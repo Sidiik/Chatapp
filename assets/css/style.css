@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  background: #183153;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+  border: 2px solid lightblue;
+  padding: 10px;
+  margin-top: 2rem;
+  color: white;
+}
+.textarea {
+}
+.my-message {
+  background: #428bec;
+  max-width: 60%;
+  color: white;
+  padding: 0.445rem 0.456rem;
+  border-radius: 2px;
+  float: right;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.37),
+    2px 0.245rem 0.29rem rgba(0, 0, 0, 0.4);
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.their {
+  background: #ffffff;
+  width: 30%;
+  color: black;
+  padding: 0.245rem;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.37),
+    2px 0.245rem 0.29rem rgba(0, 0, 0, 0.384);
+}
+.message {
+  margin-top: 10px;
+}
+.textmessage {
+  padding: 10px;
+  width: 100%;
+  max-width: 90%;
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 30px;
+  background: #183153;
+  color: white;
+  font-size: 17px;
+}
+
+.send {
+  padding: 13px;
+  background: #00bfa5;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 17px;
+  border-radius: 90%;
+}
+i {
+  font-size: 23px;
+}
+.message-area {
+  overflow-y: auto;
+  height: 30rem;
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 20px;
+  width: 100%;
+}
+
+@media (max-width: 760px) {
+  .textmessage {
+    width: 80%;
+  }
+  .container {
+    width: 90%;
+    border: none;
+  }
+}
